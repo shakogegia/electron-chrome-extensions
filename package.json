@@ -5,6 +5,7 @@
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc && webpack",
+    "postinstall": "npm run build",
     "pretest": "esbuild spec/fixtures/crx-test-preload.ts --bundle --external:electron --outfile=spec/fixtures/crx-test-preload.js --platform=node",
     "test": "node ./script/spec-runner.js",
     "prepublishOnly": "npm run build"
