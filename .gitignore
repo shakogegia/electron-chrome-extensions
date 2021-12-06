@@ -1,0 +1,9 @@
+dist
+*.map
+
+extensions/*
+!extensions/.gitkeep
+!extensions/README.md
+
+disabled/
+node_modules
